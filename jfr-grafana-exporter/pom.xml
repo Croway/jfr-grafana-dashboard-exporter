@@ -6,12 +6,56 @@
 
 	<groupId>it.croway</groupId>
 	<artifactId>jfr-grafana-exporter</artifactId>
-	<version>1.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 
+	<name>JfrGrafanaExporter</name>
+	<description>Export grafana panels from jfr recording</description>
+	<url>https://github.com/croway/jfr-grafana-dashboard-exporter</url>
+	<issueManagement>
+		<url>https://github.com/croway/jfr-grafana-dashboard-exporter/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<licenses>
+		<license>
+				<name>The Apache Software License, Version 2.0</name>
+				<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+				<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>fmariani</id>
+			<name>Federico Mariani</name>
+			<email>federico.mariani.1990@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://github.com/croway/jfr-grafana-dashboard-exporter</url>
+		<connection>scm:git:git://github.com/croway/jfr-grafana-dashboard-exporter.git</connection>
+		<developerConnection>scm:git:git@github.com:croway/jfr-grafana-dashboard-exporter.git</developerConnection>
+		<tag>jfr-grafana-exporter-${project.version}</tag>
+	</scm>
+	
 	<properties>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>jboss-releases-repository</id>
+			<name>JBoss Releases Repository</name>
+			<url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>jboss-snapshots-repository</id>
+			<name>JBoss Snapshots Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -60,5 +104,20 @@
 			<version>8.1.0</version>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
