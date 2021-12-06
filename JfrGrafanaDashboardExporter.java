@@ -1,5 +1,5 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS it.croway:jfr-grafana-exporter:1.0
+//DEPS it.croway:jfr-grafana-exporter:1.0.0
 
 import it.croway.JfrGrafanaExporter;
 
