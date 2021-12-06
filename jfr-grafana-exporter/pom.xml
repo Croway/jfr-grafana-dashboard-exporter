@@ -4,7 +4,7 @@
 
 	<groupId>it.croway</groupId>
 	<artifactId>jfr-grafana-exporter</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<name>JfrGrafanaExporter</name>
 	<description>Export grafana panels from jfr recording</description>
@@ -34,7 +34,7 @@
 		<url>https://github.com/croway/jfr-grafana-dashboard-exporter</url>
 		<connection>scm:git:git://github.com/croway/jfr-grafana-dashboard-exporter.git</connection>
 		<developerConnection>scm:git:git@github.com:croway/jfr-grafana-dashboard-exporter.git</developerConnection>
-		<tag>jfr-grafana-exporter-1.0.0</tag>
+		<tag>jfr-grafana-exporter-${project.version}</tag>
 	</scm>
 	
 	<properties>
